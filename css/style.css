@@ -1,0 +1,72 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?z1w20u');
+  src:  url('fonts/icomoon.eot?z1w20u#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?z1w20u') format('truetype'),
+    url('fonts/icomoon.woff?z1w20u') format('woff'),
+    url('fonts/icomoon.svg?z1w20u#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-d-cube-1:before {
+  content: "\e906";
+  color: #dc7000;
+}
+.icon-desktop-1-1:before {
+  content: "\e907";
+  color: #dc7000;
+}
+.icon-vr-glasses-1:before {
+  content: "\e908";
+  color: #dc7000;
+}
+.icon-ps4-1:before {
+  content: "\e909";
+  color: #dc7000;
+}
+.icon-pc-1:before {
+  content: "\e90a";
+  color: #dc7000;
+}
+.icon-smartphone-2-1:before {
+  content: "\e90b";
+  color: #dc7000;
+  font-size: 30px;
+}
+.icon-linkedin-1:before {
+  content: "\e901";
+}
+.icon-twitter-1:before {
+  content: "\e902";
+}
+.icon-instagram-1:before {
+  content: "\e903";
+}
+.icon-facebook-1:before {
+  content: "\e904";
+}
+.icon-arrow-2:before {
+  content: "\e905";
+  color: #dc7000;
+}
+.icon-fire-1:before {
+  content: "\e900";
+  color: #fff;
+}

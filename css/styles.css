@@ -1,0 +1,406 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button,
+input,
+textarea {
+  border: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(181deg, #000 0.82%, #4A2800 129.1%);
+  -webkit-backdrop-filter: blur(7px);
+          backdrop-filter: blur(7px);
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.wrap {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1175px;
+  width: 100%;
+}
+.wrap_header {
+  max-width: 1375px;
+}
+.wrap_projects {
+  max-width: 1200px;
+}
+
+.header {
+  color: #fff;
+  padding: 44px 0 39px;
+}
+.header .wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logo {
+  color: #fff;
+  font-size: 29px;
+  font-weight: 800;
+  line-height: 153.5%;
+  text-transform: uppercase;
+}
+.header__block {
+  display: flex;
+  align-items: center;
+  gap: 37px;
+}
+
+.btn {
+  border-radius: 6px;
+  background: #FA9021;
+  padding: 11px 28px;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.btn-borderradius {
+  display: inline-block;
+  padding: 14px 30px;
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 40px;
+  background: linear-gradient(92deg, #FA8305 2.08%, #FB9E3C 117.25%);
+}
+
+.btn-grey {
+  padding: 10px 30px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.11);
+  color: #fff;
+  font-family: "Rubik", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 187.5%;
+}
+
+.nav__list {
+  display: flex;
+  gap: 88px;
+}
+.nav__link {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+.nav__link:hover {
+  border-bottom: 1px solid red;
+}
+
+.title {
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  font-weight: 700;
+}
+.title_main {
+  font-size: 50px;
+  line-height: 155.2%;
+}
+.title_xl {
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 187.5%;
+}
+.title_l {
+  font-family: "Rubik", sans-serif;
+  font-size: 31px;
+  line-height: 187.5%;
+}
+.title_m {
+  font-size: 30px;
+  line-height: 187.5%;
+}
+
+.hero {
+  padding: 70px 0;
+}
+.hero__name {
+  color: #E87D0E;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 155.2%;
+  margin-bottom: 17px;
+  max-width: 160px;
+  width: 100%;
+}
+.hero__title {
+  margin-bottom: 26px;
+  max-width: 480px;
+  width: 100%;
+}
+.hero__desc {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 200%;
+  margin-bottom: 50px;
+  max-width: 527px;
+  width: 100%;
+}
+
+.wrapper-bg .wrap {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.header {
+  flex: 1 0 100%;
+  order: 1;
+  z-index: 1;
+}
+
+.hero {
+  flex: 1 0 52%;
+  order: 2;
+}
+
+.bg-wrap {
+  margin-top: -133px;
+  flex: 1 0 45%;
+  order: 3;
+  max-width: 806px;
+  height: 761px;
+  background-image: url(../img/joy_stick.png);
+}
+
+.trending {
+  padding-top: 132px;
+}
+.trending__line {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 47px;
+  justify-content: space-between;
+  margin-bottom: 57px;
+}
+.trending__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 47px;
+}
+.trending__item-link {
+  text-align: center;
+  max-width: 251px;
+  width: 100%;
+  display: block;
+}
+.trending__pic {
+  margin-bottom: 25px;
+  border-radius: 20px;
+}
+.trending__followers {
+  color: #fff;
+  font-family: "Rubik", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 187.5%;
+}
+
+.index-block {
+  padding-top: 129px;
+  position: relative;
+}
+.index-block__title {
+  margin: 0 auto 67px;
+  text-align: center;
+  max-width: 826px;
+  width: 100%;
+}
+.index-block__desc {
+  max-width: 545px;
+  width: 100%;
+}
+.index-block__title-m {
+  margin-bottom: 32px;
+}
+.index-block__text {
+  margin-bottom: 46px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 187.5%;
+}
+.index-block__pic {
+  position: relative;
+}
+.index-block__svg {
+  position: absolute;
+  top: -70px;
+  right: 113px;
+  z-index: -1;
+}
+
+.benefits {
+  background-image: url(../img/benef-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+.benefits .wrap {
+  padding: 93px 51px;
+}
+.benefits__desc {
+  text-align: center;
+  max-width: 826px;
+  width: 100%;
+  margin: 0 auto;
+}
+.benefits__title {
+  margin-bottom: 25px;
+}
+.benefits__text {
+  margin-bottom: 99px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 187.5%;
+}
+.benefits__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px;
+  justify-content: center;
+}
+.item-benefits {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+.item-benefits__pic {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  background-color: #fff;
+  position: relative;
+}
+.item-benefits__icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+}
+.item-benefits__icon .icon-smartphone-2-1 {
+  font-size: 30px;
+}
+.item-benefits__icon .icon-pc-1 {
+  font-size: 32px;
+}
+.item-benefits__icon .icon-ps4-1 {
+  font-size: 40px;
+}
+.item-benefits__icon .icon-vr-glasses-1 {
+  font-size: 31px;
+}
+.item-benefits__icon .icon-desktop-1-1 {
+  font-size: 33px;
+}
+.item-benefits__icon .icon-d-cube-1 {
+  font-size: 31px;
+}
+
+.projects {
+  padding-top: 148px;
+  color: #fff;
+}
+.projects .wrap {
+  text-align: center;
+}
+.projects__desc {
+  margin: 0 auto 71px;
+  text-align: center;
+  width: 497px;
+}
+.projects__title {
+  margin-bottom: 15px;
+}
+.projects__text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 187.5%;
+}
+.projects__btn {
+  display: inline-block;
+}
+.projects__list {
+  margin-bottom: 72px;
+  display: grid;
+  grid-auto-columns: 0.69fr 0.07fr 0.3fr 0.07fr 0.86fr 0.07fr 0.26fr 0.07fr 1fr;
+  grid-auto-rows: auto;
+  grid-template-areas: "1 2 3 4 5 6 7 8 9" "a b c d e f g h j";
+}
+.projects__img {
+  height: 100%;
+  width: 100%;
+}
+.projects__img_1 {
+  grid-column: span 4;
+  width: 95%;
+}
+.projects__img_2 {
+  grid-column: span 4;
+  width: 95%;
+}
+.projects__img_5 {
+  grid-column: span 4;
+  width: 95%;
+  justify-self: right;
+}
+.projects__img_6 {
+  grid-column: span 4;
+  width: 95%;
+  justify-self: right;
+}
+
+@media screen and (max-width: 1024px) {
+  .benefits__list {
+    gap: 50px;
+  }
+  .benefits__item {
+    width: 220px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  .projects__list {
+    row-gap: 1.6%;
+    grid-template-areas: unset;
+    grid-auto-columns: unset;
+    grid-auto-rows: unset;
+  }
+  .projects__img {
+    width: 100%;
+  }
+}/*# sourceMappingURL=styles.css.map */
