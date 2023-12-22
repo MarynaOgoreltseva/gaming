@@ -46,6 +46,27 @@ ul {
     &_projects {
         max-width: 1200px;
     }
+    &_subscribe {
+        max-width: 1200px;
+    }
+    &_footer {
+        max-width: 1220px;
+    }
+    &_about {
+        max-width: 1250px;
+    }
+    &_team {
+        max-width: 1300px;
+        // padding-left: 44px;
+    }
+}
+
+.logo {
+    color: $textcolor;
+    font-size: 29px;
+    font-weight: 800;
+    line-height: 153.5%;
+    text-transform: uppercase;
 }
 
 .header {
@@ -53,17 +74,13 @@ ul {
     // backdrop-filter: blur(7px);
     color: #fff;
     padding: 44px 0 39px;
+    flex: 1 0 100%;
+    order: 1;
+    z-index: 1;
     & .wrap {
         display: flex;
         justify-content: space-between;
         align-items: center;
-    }
-    &__logo {
-        color: $textcolor;
-        font-size: 29px;
-        font-weight: 800;
-        line-height: 153.5%;
-        text-transform: uppercase;
     }
     &__block {
         display: flex;
@@ -81,6 +98,12 @@ ul {
     font-size: 13px;
     font-style: normal;
     font-weight: 400;
+    &_subscribe {
+        display: inline-block;
+        padding: 8px 14px 9px 22px;
+        border-radius: 8px;
+        background: #DC7000;
+    }
 }
 
 .btn-borderradius {
@@ -142,10 +165,33 @@ ul {
         font-size: 30px;
         line-height: 187.5%;
     }
+    &_s {
+        font-size: 25px;
+    }
+    &_xs {
+        font-size: 17px;
+    }
+}
+
+.title-block {
+    max-width: 545px;
+    width: 100%;
+    &__title-m {
+        margin-bottom: 32px;
+    }
+    &__text {
+        margin-bottom: 46px;
+        color: $textcolor;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 187.5%;
+    }
 }
 
 .hero {
     padding: 70px 0;
+    flex: 1 0 52%;
+    order: 2;
     &__name {
         color: #E87D0E;
         font-family: Poppins;
@@ -181,16 +227,6 @@ ul {
     }    
 }
 
-.header {
-    flex: 1 0 100%;
-    order: 1;
-    z-index: 1;
-}
-
-.hero {
-    flex: 1 0 52%;
-    order: 2;
-}
 
 .bg-wrap {
     margin-top: -133px;
@@ -247,21 +283,6 @@ ul {
         text-align: center;
         max-width: 826px;
         width: 100%;
-    }
-    &__desc {
-        max-width: 545px;
-        width: 100%;
-    }
-    &__title-m {
-        margin-bottom: 32px;
-    }
-    &__text {
-        margin-bottom: 46px;
-        color: $textcolor;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 187.5%;
-        
     }
     &__pic {
         position: relative;
@@ -356,6 +377,7 @@ ul {
 
 .projects {
     padding-top: 148px;
+    padding-bottom: 105px;
     color: $textcolor;
     & .wrap {
         text-align: center;
@@ -363,7 +385,8 @@ ul {
     &__desc {
         margin: 0 auto 71px;
         text-align: center;
-        width: 497px;
+        max-width: 497px;
+        width: 100%;
     }
     &__title {
         margin-bottom: 15px;
@@ -410,6 +433,134 @@ ul {
     }
 }
 
+.subscribe {
+    padding-bottom: 163px;
+    & .wrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
+.subscribe-form {
+    width: 100%;
+    color: $textcolor;
+    padding: 40px 50px 42px 56px;
+    border-radius: 15px;
+    background: #1C140F;
+    display: flex;
+    flex-direction: row;
+    // flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 40px;
+    &__desc {
+        max-width: 566px;
+        width: 100%;
+        padding-right: 30px;
+        // width: calc(100% - 528px);
+        // flex: 0 1 50%;
+    }
+    &__title {
+        font-weight: 500;
+        margin-bottom: 10px;
+        line-height: normal;
+    }
+    &__text {
+        font-size: 17px;
+        font-weight: 400;
+    }
+    &__email-form {
+        // flex: 0 1 50%;
+        border-radius: 8px;
+        background: #FFF;
+        padding: 6px 6px 6px 31px;
+        max-width: 386px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    &__input {
+        outline: none;
+        &::placeholder {
+            color: #898989;
+            font-size: 13px;
+        }
+    }
+}
+
+.footer {
+    color: $textcolor;
+    & .wrap {
+        display: flex;
+        padding: 73px 15px 62px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        row-gap: 40px;
+    }
+    &__desc {
+        max-width: 370px;
+        width: 100%;
+    }
+    &__logo {
+        margin-bottom: 15px;
+    }
+    &__text {
+        margin-bottom: 25px;
+    }
+    &__column {
+        display: flex;
+        flex-direction: column;
+    }
+    &__column-title {
+        margin-bottom: 15px;
+    }
+    &__column-link {
+        color: $textcolor;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 186.3%;
+        &_text {
+            line-height: normal;
+            max-width: 282px;
+            width: 100%;
+            margin-bottom: 11px;
+        }
+    }
+}
+
+.social-row {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    &__link {
+        width: 34px;
+        height: 34px;
+        background-color: #fff;
+        border-radius: 50%;
+        position: relative;
+    }
+    & .icon {
+        color: black;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 12px;
+    }
+}
+
+.copyright {
+    border-top: 1px solid #D2D2D2;
+    padding: 29px 0;
+    text-align: center;
+    color: $textcolor;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 190.6%;
+}
+
 @media screen and (max-width:1024px) {
     .benefits {
         &__list {
@@ -422,7 +573,41 @@ ul {
     }
 }
 
+@media screen and (max-width:800px) {
+    .header {
+        &__nav {
+            display: none;
+        }
+    }
+    .subscribe-form {
+        flex-direction: column;
+        text-align: center;
+        &__desc {
+            padding-right: 0;
+        }
+    }
+    .footer {
+        &__desc {
+            order: 1;
+            max-width: 282px;
+        }
+        &__social {
+            order: 2;
+        }
+        &__column_about {
+            order: 4;
+        }
+        &__column_contact {
+            order: 3;
+        }
+        
+    }
+}
+
 @media screen and (max-width: 600px) {
+    // .bg-wrap {
+    //     display: none;
+    // }
     .projects {
         &__list {
             row-gap: 1.6%;
@@ -434,5 +619,22 @@ ul {
             width: 100%;
         }
     }
+    .footer .wrap {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .subscribe-form {
+        padding: 20px;
+        &__email-form {
+            flex-direction: column;
+            padding: 6px;
+        }
+        &__input {
+            padding: 8px 14px 15px 22px;
+            width: 100%;
+        }
+    }    
 }
  

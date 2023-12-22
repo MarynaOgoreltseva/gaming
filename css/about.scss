@@ -1,0 +1,210 @@
+@import "vars.scss";
+.btn-arrow {
+    padding: 11px 27px 16px 19px;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+    display: inline-flex;
+    gap: 18px;
+    align-items: center;
+    border-radius: 40px;
+    background: linear-gradient(92deg, #FA8305 2.08%, #FB9E3C 117.25%);
+}
+
+.hero-about {
+    padding: 70px 0;
+        // flex: 1 0 52%;
+        // order: 2;
+        color: $textcolor;
+    & .wrap {
+        display: flex;
+        align-items: center;
+        // gap: 166px;
+    }
+    &__text-block {
+        margin-right: 166px;
+    }
+    &__name {
+        color: #E47500;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 208.5%;
+        margin-bottom: 38px;
+    }
+    &__title {
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 180.5%;
+        margin-bottom: 25px;
+        max-width: 425px;
+        width: 100%;
+    }
+    &__desc {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 208.5%;
+        margin-bottom: 50px;
+        max-width: 415px;
+        width: 100%;
+    }
+}
+
+.work {
+    padding: 144px 0 147px;
+    color: $textcolor;
+    line-height: 188%;
+    font-weight: 400;
+    font-size: 14px;
+    &__title {
+        margin-bottom: 63px;
+    }
+    &__list {
+        display: flex;
+        gap: 43px;
+    }
+    &__item {
+        border-radius: 20px;
+        background: #1C140F;
+        box-shadow: 0px 4px 94px 0px rgba(0, 0, 0, 0.15);
+        padding: 64px 37px;
+        max-width: 378px;
+        width: 100%;
+    }
+    &__btn {
+        border-radius: 8px;
+        background: rgba(176, 0, 220, 0.11);
+        padding: 7px 25px 6px 14px;
+        margin-bottom: 19px;
+        color: #FFF;
+        display: inline-block;
+        // font-size: 14px;
+        // font-weight: 400;
+        // line-height: 187.5%;
+        &_color2 {
+            border-radius: 8px;
+            background: rgba(220, 66, 0, 0.11);
+        }
+        &_color3 {
+            border-radius: 8px;
+            background: rgba(0, 220, 141, 0.11);
+        }
+    }
+    &__name {
+        margin-bottom: 16px;
+        font-size: 20px;
+        line-height: 188%;
+        font-weight: 600;
+    }
+}
+
+.about-news {
+    background: #1C140F;
+    & .wrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__pic {
+        padding-top: 113px;
+    }
+    &__text-block {
+        padding: 134px 95px 100px;
+        color: $textcolor;
+        font-size: 16px;
+        line-height: 203%;
+        
+    }
+    &__name {
+        font-weight: 500;
+        margin-bottom: 14px;
+        max-width: 536px;
+    }
+    &__title {
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 157.5%;
+        margin-bottom: 14px;
+        max-width: 531px;
+    }
+    &__text {
+        font-weight: 400;
+        max-width: 536px;
+        width: 100%;
+    }
+}
+
+.team {
+    padding-top: 148px;
+    padding-bottom: 157px;
+    &__title {
+        margin-bottom: 53px;
+    }
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 28px;
+        justify-content: center;
+    }
+    &__item {
+        padding: 35px 84px 30px;
+        border-radius: 20px;
+        background: #1C140F;
+        text-align: center;
+        max-width: 296px;
+        width: 100%;
+    }
+    &__item-name {
+        color: $textcolor;
+        font-size: 19px;
+        font-weight: 600;
+        line-height: 202.5%;
+    }
+    &__item-job {
+        color: #E8E8E8;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 202.5%;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .about-news {
+        & .wrap {
+            flex-wrap: wrap;
+        }
+    }
+    .hero-about {
+        & .wrap {
+            flex-wrap: wrap;
+            row-gap: 40px;
+            justify-content: center;
+        }
+        &__text-block {
+            margin-right: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .work {
+        &__list {
+            flex-direction: column;
+            row-gap: 40px;
+            align-items: center;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .about-news {
+        &__pic {
+            padding-top: 50px;
+        }
+        &__text-block {
+            padding: 50px;
+        }
+    }
+    
+}
