@@ -40,8 +40,15 @@ ul {
   max-width: 1175px;
   width: 100%;
 }
+.wrap_wrapper-bg {
+  max-width: 1375px;
+  padding: 0;
+}
 .wrap_header {
   max-width: 1375px;
+}
+.wrap_hero-index {
+  justify-content: center;
 }
 .wrap_projects {
   max-width: 1200px;
@@ -57,6 +64,9 @@ ul {
 }
 .wrap_team {
   max-width: 1300px;
+}
+.wrap_services-news {
+  max-width: 1200px;
 }
 
 .logo {
@@ -216,16 +226,19 @@ ul {
 .wrapper-bg .wrap {
   display: flex;
   flex-wrap: wrap;
-  overflow: hidden;
 }
 
 .bg-wrap {
-  margin-top: -133px;
+  margin-top: -193px;
+  margin-left: 90px;
   flex: 1 0 45%;
   order: 3;
   max-width: 806px;
+  width: 100%;
   height: 761px;
   background-image: url(../img/joy_stick.png);
+  background-repeat: no-repeat;
+  z-index: -1;
 }
 
 .trending {
@@ -546,6 +559,10 @@ ul {
 @media screen and (max-width: 800px) {
   .header__nav {
     display: none;
+  }
+  .bg-wrap {
+    margin-top: -50px;
+    margin-left: 0;
   }
   .subscribe-form {
     flex-direction: column;

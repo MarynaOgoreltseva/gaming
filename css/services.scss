@@ -1,0 +1,149 @@
+@import "vars.scss";
+
+.services-news {
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 189px;
+    }
+}
+
+.services-news-item {
+    display: flex;
+    // justify-content: space-between;
+    flex-direction: row;
+    color: $textcolor;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: normal;
+    &__desc {
+        padding-bottom: 18px;
+        padding-top: 7px;
+        flex: 1 0 58%;
+    }
+    &__title {
+        max-width: 472px;
+        margin-bottom: 43px;
+        line-height: normal;
+    }
+    &__text {
+        max-width: 536px;
+        margin-bottom: 18px;
+        padding-bottom: 35px;
+    }
+    &__words {
+        max-width: 508px;
+        margin-bottom: 46px;
+    }
+    &__btn {
+        display: inline-block;
+        color: $textcolor;
+        background: #DC7000;
+        padding: 13px 45px;
+        font-size: 16px;
+    }
+    &__pic {
+        background-image: url(../img/services/Rec1.png);
+        // max-width: 496px;
+        // flex: 1 0 42%;
+        // width: 100%;
+        flex: 1 0 42%;
+        background-size: cover;
+        &_bg2 {
+            background-image: url(../img/services/Rec2.png);
+        }
+        &_bg3 {
+            background-image: url(../img/services/Rec3.png);
+        }
+    }
+    &_row-reverse  {
+        flex-direction: row-reverse;
+    }
+}
+
+.followers {
+    margin-bottom: 133px;
+    padding-top: 63px;
+    text-align: center;
+    color: $textcolor;
+    &__text-block {
+        // margin-right: 166px;
+    }
+    &__name {
+        color: #E47500;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 208.5%;
+        margin-bottom: 15px;
+    }   
+    &__title {
+        font-size: 33px;
+        font-weight: 600;
+        line-height: 180.5%;
+        margin-bottom: 13px;
+    }   
+    &__desc {
+        font-weight: 500;
+        line-height: 187.5%;
+        margin-bottom: 45px;
+    }
+    &__stat-list {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 40px;
+        justify-content: space-between;
+        max-width: 1140px;
+        border-radius: 10px;
+        background: #1C140F;
+        padding: 37px 83px 37px 91px;
+    }
+}
+
+.stat-followers {
+    display: flex;
+    gap: 36px;
+    color: $textcolor;
+    font-family: 'Rubik', sans-serif;
+    &__pic {
+        width: 55px;
+        height: 55px;
+        border-radius: 50%;
+        background-color: #fff;
+        position: relative;
+    }
+    &__icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 30px;
+    }
+    &__numb {
+            font-size: 25px;
+            font-weight: 700;
+            line-height: 30px;
+    }
+    &__name {
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 30px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .followers {
+        &__stat-list {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+}
+
+@media screen and (max-width:600px) {
+        .followers {
+            &__stat-list {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    }

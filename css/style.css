@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?u37dwq');
-  src:  url('fonts/icomoon.eot?u37dwq#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?u37dwq') format('truetype'),
-    url('fonts/icomoon.woff?u37dwq') format('woff'),
-    url('fonts/icomoon.svg?u37dwq#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?v98rmh');
+  src:  url('fonts/icomoon.eot?v98rmh#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?v98rmh') format('truetype'),
+    url('fonts/icomoon.woff?v98rmh') format('woff'),
+    url('fonts/icomoon.svg?v98rmh#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,18 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-heroicons_sm-user:before {
+  content: "\e90d";
+  color: #dc7000;
+}
+.icon-bx_bxs-server:before {
+  content: "\e90e";
+  color: #dc7000;
+}
+.icon-gridicons_location:before {
+  content: "\e90f";
+  color: #dc7000;
+}
 .icon-arrow-6:before {
   content: "\e90c";
   color: #fff;

@@ -1,0 +1,133 @@
+.services-news__list {
+  display: flex;
+  flex-direction: column;
+  gap: 189px;
+}
+
+.services-news-item {
+  display: flex;
+  flex-direction: row;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: normal;
+}
+.services-news-item__desc {
+  padding-bottom: 18px;
+  padding-top: 7px;
+  flex: 1 0 58%;
+}
+.services-news-item__title {
+  max-width: 472px;
+  margin-bottom: 43px;
+  line-height: normal;
+}
+.services-news-item__text {
+  max-width: 536px;
+  margin-bottom: 18px;
+  padding-bottom: 35px;
+}
+.services-news-item__words {
+  max-width: 508px;
+  margin-bottom: 46px;
+}
+.services-news-item__btn {
+  display: inline-block;
+  color: #fff;
+  background: #DC7000;
+  padding: 13px 45px;
+  font-size: 16px;
+}
+.services-news-item__pic {
+  background-image: url(../img/services/Rec1.png);
+  flex: 1 0 42%;
+  background-size: cover;
+}
+.services-news-item__pic_bg2 {
+  background-image: url(../img/services/Rec2.png);
+}
+.services-news-item__pic_bg3 {
+  background-image: url(../img/services/Rec3.png);
+}
+.services-news-item_row-reverse {
+  flex-direction: row-reverse;
+}
+
+.followers {
+  margin-bottom: 133px;
+  padding-top: 63px;
+  text-align: center;
+  color: #fff;
+}
+.followers__name {
+  color: #E47500;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 208.5%;
+  margin-bottom: 15px;
+}
+.followers__title {
+  font-size: 33px;
+  font-weight: 600;
+  line-height: 180.5%;
+  margin-bottom: 13px;
+}
+.followers__desc {
+  font-weight: 500;
+  line-height: 187.5%;
+  margin-bottom: 45px;
+}
+.followers__stat-list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 40px;
+  justify-content: space-between;
+  max-width: 1140px;
+  border-radius: 10px;
+  background: #1C140F;
+  padding: 37px 83px 37px 91px;
+}
+
+.stat-followers {
+  display: flex;
+  gap: 36px;
+  color: #fff;
+  font-family: "Rubik", sans-serif;
+}
+.stat-followers__pic {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: #fff;
+  position: relative;
+}
+.stat-followers__icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+}
+.stat-followers__numb {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 30px;
+}
+.stat-followers__name {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .followers__stat-list {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .followers__stat-list {
+    flex-direction: column;
+    align-items: center;
+  }
+}/*# sourceMappingURL=services.css.map */
