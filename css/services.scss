@@ -2,7 +2,7 @@
 
 .followers {
     margin-bottom: 133px;
-    padding-top: 63px;
+    // padding-top: 63px;
     text-align: center;
     color: $textcolor;
 
@@ -10,26 +10,7 @@
         // margin-right: 166px;
     }
 
-    &__name {
-        color: #E47500;
-        font-size: 12px;
-        font-weight: 400;
-        line-height: 208.5%;
-        margin-bottom: 15px;
-    }
 
-    &__title {
-        font-size: 33px;
-        font-weight: 600;
-        line-height: 180.5%;
-        margin-bottom: 13px;
-    }
-
-    &__desc {
-        font-weight: 500;
-        line-height: 187.5%;
-        margin-bottom: 45px;
-    }
 
     &__stat-list {
         display: flex;
@@ -40,6 +21,30 @@
         border-radius: 10px;
         background: #1C140F;
         padding: 37px 83px 37px 91px;
+    }
+}
+
+.line-text {
+    color: $textcolor;
+    padding-top: 63px;
+    text-align: center;
+    &__name {
+        color: #E47500;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 208.5%;
+        margin-bottom: 15px;
+    }
+    &__title {
+        font-size: 33px;
+        font-weight: 600;
+        line-height: 180.5%;
+        margin-bottom: 13px;
+    }
+    &__desc {
+        font-weight: 500;
+        line-height: 187.5%;
+        margin-bottom: 45px;
     }
 }
 
