@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?20mwy8');
-  src:  url('fonts/icomoon.eot?20mwy8#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?20mwy8') format('truetype'),
-    url('fonts/icomoon.woff?20mwy8') format('woff'),
-    url('fonts/icomoon.svg?20mwy8#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?x090gc');
+  src:  url('fonts/icomoon.eot?x090gc#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?x090gc') format('truetype'),
+    url('fonts/icomoon.woff?x090gc') format('woff'),
+    url('fonts/icomoon.svg?x090gc#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -110,6 +110,14 @@
 }
 .icon-fire-1:before {
   content: "\e900";
+  color: #fff;
+}
+.icon-gps-1:before {
+  content: "\e918";
+  color: #fff;
+}
+.icon-phone-1:before {
+  content: "\e919";
   color: #fff;
 }
 .icon-eva_arrow1:before {
