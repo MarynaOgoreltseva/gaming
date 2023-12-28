@@ -157,6 +157,10 @@ ul {
   font-style: normal;
   font-weight: 400;
 }
+.nav__item_btn:hover {
+  color: #FA9021;
+  background: transparent;
+}
 .nav__link {
   color: #fff;
   font-family: "Poppins", sans-serif;
@@ -164,7 +168,8 @@ ul {
   font-weight: 400;
 }
 .nav__link:hover {
-  border-bottom: 1px solid red;
+  border-bottom: 2px solid #FA9021;
+  color: #FA9021;
 }
 
 .title {
@@ -705,8 +710,8 @@ ul {
     margin-bottom: auto;
   }
   .btn-burger.is-active::before {
-    transform: rotate(45deg) translate(7px, 6px);
-    height: 2px;
+    transform: rotate(45deg) translate(7px, 7px);
+    height: 3px;
     border: none;
     background: currentColor;
     transition: transform 0.25s ease;
