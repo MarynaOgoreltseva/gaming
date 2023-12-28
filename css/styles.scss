@@ -645,6 +645,7 @@ ul {
 
 @media screen and (max-width:800px) {
     .trending {
+        padding-top: 0;
         &__list {
             flex-wrap: wrap;
         }
@@ -653,7 +654,16 @@ ul {
             flex-direction: column;
             // row-gap: 40;
         }
-    
+        .index-block {
+            padding-top: 70px;
+        }
+        .projects {
+            padding-top: 70px;
+            padding-bottom: 70px;
+        }
+        .subscribe {
+            padding-bottom: 70px;
+        }
     .hero__bg-wrap {
             margin-top: -50px;
             margin-left: 0;
