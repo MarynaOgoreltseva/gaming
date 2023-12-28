@@ -675,7 +675,6 @@ ul {
     width: 48px;
     height: 48px;
     border-radius: 12px;
-    border: 2px solid #fff;
     background: transparent;
     position: relative;
   }
@@ -693,14 +692,13 @@ ul {
   }
   .btn-burger::before {
     height: auto;
-    border-top: 2px solid #FA8305;
-    border-bottom: 2px solid #FA8305;
+    border-top: 3px solid #FA8305;
+    border-bottom: 3px solid #FA8305;
     top: 12px;
     bottom: 12px;
   }
   .btn-burger::after {
-    height: 2px;
-    height: 2px;
+    height: 3px;
     background-color: #FA8305;
     bottom: 0;
     margin-top: auto;
