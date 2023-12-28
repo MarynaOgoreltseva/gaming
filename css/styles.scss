@@ -226,13 +226,15 @@ ul {
     padding: 70px 0;
     flex: 1 0 52%;
     order: 2;
+    &__text-block {
+        flex: 1 0 40%;
+    }
     &__name {
         color: #E87D0E;
-        font-family: Poppins;
         font-size: 20px;
         font-style: normal;
         font-weight: 700;
-        line-height: 155.2%;
+        line-height: 155%;
         margin-bottom: 17px;
         max-width: 160px;
         width: 100%;
@@ -251,6 +253,44 @@ ul {
         max-width: 527px;
         width: 100%;
     }
+    &__bg-wrap {
+        margin-top: -193px;
+        // margin-left: 90px;
+        flex: 1 0 45%;
+        order: 3;
+        max-width: 806px;
+        min-width: 444px;
+        width: 100%;
+        height: 761px;
+        background-image: url(../img/index/joy_stick.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        // background-position: center;
+        z-index: -1;
+        position: relative;
+    }
+    &__pic-block {
+        display: flex;
+        position: absolute;
+        top: 130px;
+        left: 0;
+        // transform: translate(-50%, -50%);
+        // border: 1px solid red;
+        max-width: 578px;
+        width: 100%;
+        height: 221px;
+    }
+    &__picture-wrap {
+        &_1 {
+            margin-top: auto;
+        }
+        &_2 {
+            margin-left: 50px;
+        }
+        &_3 {
+            margin-left: auto;
+        }
+    }
 }
 
 .wrapper-bg {
@@ -259,24 +299,6 @@ ul {
         flex-wrap: wrap;
         // overflow: hidden;
     }    
-}
-
-
-.bg-wrap {
-    margin-top: -193px;
-    margin-left: 90px;
-    flex: 1 0 45%;
-    order: 3;
-    max-width: 806px;
-    width: 100%;
-        height: 761px;
-    background-image: url(../img/joy_stick.png);
-    background-repeat: no-repeat;
-    z-index: -1;
-    // & img {
-    //     max-width: 806px;
-    //     height: 761px;
-    // }
 }
 
 .trending {
@@ -290,7 +312,7 @@ ul {
     }
     &__list {
         display: flex;
-        flex-wrap: wrap;
+        // flex-wrap: wrap;
         justify-content: center;
         gap: 47px;
     }
@@ -334,7 +356,7 @@ ul {
 }
 
 .benefits {
-    background-image: url(../img/benef-bg.png);
+    background-image: url(../img/index/benef-bg.png);
     background-size: cover;
     background-repeat: no-repeat;
     color: $textcolor;
@@ -436,7 +458,7 @@ ul {
     &__list {
         margin-bottom: 72px;
         display: grid;
-        // row-gap: 2%;
+        row-gap: 5%;
         // // column-gap: 27px;
         grid-auto-columns: 0.69fr 0.07fr 0.3fr 0.07fr 0.86fr 0.07fr 0.26fr 0.07fr 1fr;
         grid-auto-rows: auto;
@@ -617,16 +639,20 @@ ul {
 }
 
 @media screen and (max-width:800px) {
-    // .header {
-    //     &__nav {
-    //         display: flex;
-    //         gap: 30px;
-    //     }
-    // }
+    .trending {
+        &__list {
+            flex-wrap: wrap;
+        }
+    }
+    .wrap_hero-index {
+            flex-direction: column;
+            // row-gap: 40;
+        }
     
-    .bg-wrap {
+    .hero__bg-wrap {
             margin-top: -50px;
             margin-left: 0;
+            flex: unset;
     }
     .subscribe-form {
         flex-direction: column;
@@ -762,23 +788,34 @@ ul {
 }
 
 @media screen and (max-width: 600px) {
-    // .bg-wrap {
-    //     display: none;
+    
+    // .projects {
+    //     &__list {
+    //         row-gap: 1.6%;
+    //         grid-template-areas: unset;
+    //         grid-auto-columns: unset;
+    //         grid-auto-rows: unset;
+    //     }
+    //     &__img {
+    //         width: 100%;
+    //     }
     // }
-    .projects {
-        &__list {
-            row-gap: 1.6%;
-            grid-template-areas: unset;
-            grid-auto-columns: unset;
-            grid-auto-rows: unset;
-        }
-        &__img {
-            width: 100%;
-        }
-    }
     .footer .wrap {
         flex-direction: column;
     }
+        .hero {
+            padding: 30px 0;
+            &__bg-wrap {
+                min-width: unset;
+                // background-size: contain;
+            }
+            &__pic-block {
+                top: 90px;
+            }
+            &__picture-wrap_1 {
+                margin-top: unset;
+            }
+        }
 }
 
 @media screen and (max-width: 450px) {
@@ -793,5 +830,16 @@ ul {
             width: 100%;
         }
     }    
+    .projects {
+        &__list {
+            display: flex;
+            flex-direction: column;
+            gap: 27px;
+        }
+        &__img {
+            width: 100%;
+            height: 200px;
+        }
+    }
 }
  

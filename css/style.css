@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?x090gc');
-  src:  url('fonts/icomoon.eot?x090gc#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?x090gc') format('truetype'),
-    url('fonts/icomoon.woff?x090gc') format('woff'),
-    url('fonts/icomoon.svg?x090gc#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?gtqu20');
+  src:  url('fonts/icomoon.eot?gtqu20#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?gtqu20') format('truetype'),
+    url('fonts/icomoon.woff?gtqu20') format('woff'),
+    url('fonts/icomoon.svg?gtqu20#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -51,6 +51,10 @@
 .icon-ant-design_star-filled:before {
   content: "\e910";
   color: #fea250;
+}
+.icon-bx_bxs-check-circle:before {
+  content: "\e91a";
+  color: #2fab73;
 }
 .icon-heroicons_sm-user:before {
   content: "\e90d";
