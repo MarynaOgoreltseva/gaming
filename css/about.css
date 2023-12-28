@@ -11,6 +11,26 @@
   background: linear-gradient(92deg, #FA8305 2.08%, #FB9E3C 117.25%);
 }
 
+.page-block {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+.page-block__name-link {
+  color: #fff;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 208.5%;
+}
+.page-block__name-link_color {
+  color: #E47500;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 208.5%;
+}
+
 .hero-about {
   padding: 70px 0;
   color: #fff;
@@ -19,15 +39,10 @@
   display: flex;
   align-items: center;
 }
-.hero-about__text-block {
+.hero-about__text-desc {
   margin-right: 166px;
 }
-.hero-about__name {
-  color: #E47500;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 208.5%;
+.hero-about__block-text {
   margin-bottom: 38px;
 }
 .hero-about__title {

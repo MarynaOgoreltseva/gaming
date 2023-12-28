@@ -1,6 +1,9 @@
 .map {
   margin-bottom: 62px;
 }
+.map__name {
+  margin-bottom: 15px;
+}
 .map__block-text {
   margin-bottom: 93px;
 }

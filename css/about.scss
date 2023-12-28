@@ -12,7 +12,25 @@
     border-radius: 40px;
     background: linear-gradient(92deg, #FA8305 2.08%, #FB9E3C 117.25%);
 }
-
+.page-block {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    &__name-link {
+        color: $textcolor;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 208.5%;
+        &_color {
+            color: #E47500;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 208.5%;
+        }
+    }
+}
 .hero-about {
     padding: 70px 0;
         // flex: 1 0 52%;
@@ -23,15 +41,11 @@
         align-items: center;
         // gap: 166px;
     }
-    &__text-block {
+    &__text-desc {
         margin-right: 166px;
     }
-    &__name {
-        color: #E47500;
-        font-size: 12px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 208.5%;
+    &__block-text {
+        
         margin-bottom: 38px;
     }
     &__title {
