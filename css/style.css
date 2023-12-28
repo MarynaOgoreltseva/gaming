@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?gtqu20');
-  src:  url('fonts/icomoon.eot?gtqu20#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?gtqu20') format('truetype'),
-    url('fonts/icomoon.woff?gtqu20') format('woff'),
-    url('fonts/icomoon.svg?gtqu20#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?4ugl8f');
+  src:  url('fonts/icomoon.eot?4ugl8f#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?4ugl8f') format('truetype'),
+    url('fonts/icomoon.woff?4ugl8f') format('woff'),
+    url('fonts/icomoon.svg?4ugl8f#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -67,6 +67,14 @@
 .icon-gridicons_location:before {
   content: "\e90f";
   color: #dc7000;
+}
+.icon-arrow-6-1:before {
+  content: "\e91b";
+  color: #fff;
+}
+.icon-arrow-7:before {
+  content: "\e91c";
+  color: #fff;
 }
 .icon-arrow-6:before {
   content: "\e90c";

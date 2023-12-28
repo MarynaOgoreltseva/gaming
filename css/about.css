@@ -25,10 +25,6 @@
 }
 .page-block__name-link_color {
   color: #E47500;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 208.5%;
 }
 
 .hero-about {
@@ -38,9 +34,11 @@
 .hero-about .wrap {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .hero-about__text-desc {
-  margin-right: 166px;
+  max-width: 425px;
+  width: 100%;
 }
 .hero-about__block-text {
   margin-bottom: 38px;
@@ -50,16 +48,37 @@
   font-weight: 700;
   line-height: 180.5%;
   margin-bottom: 25px;
-  max-width: 425px;
-  width: 100%;
 }
 .hero-about__desc {
   font-size: 15px;
   font-weight: 400;
   line-height: 208.5%;
   margin-bottom: 50px;
-  max-width: 415px;
+}
+.hero-about__slider-list {
+  max-width: 739px;
   width: 100%;
+}
+.hero-about__slider-item {
+  position: relative;
+  max-width: 739px;
+  width: 100%;
+}
+.hero-about__slider-number {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 17px 30px;
+  background: #333;
+  width: 179px;
+  text-align: center;
+  z-index: 5;
+}
+.hero-about__slider__text {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 208.5%;
 }
 
 .work {
@@ -188,12 +207,28 @@
   .hero-about__text-block {
     margin-right: 0;
   }
+  .hero-about__text-desc {
+    max-width: unset;
+    text-align: center;
+  }
 }
 @media screen and (max-width: 760px) {
+  .work {
+    padding: 0 0 70px;
+  }
   .work__list {
     flex-direction: column;
     row-gap: 40px;
     align-items: center;
+  }
+  .team {
+    padding: 70px 0;
+  }
+  .subscribe {
+    padding-bottom: 70px;
+  }
+  .hero-about {
+    padding-top: 30px;
   }
 }
 @media screen and (max-width: 600px) {

@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 </head>
 <body>
     <header class="header">
@@ -88,12 +91,12 @@
     </header>
     <main class="main">
         <section class="hero-about">
-            <div class="wrap">
+            <div class="wrap wrap_about">
                 <div class="hero-about__text-desc">
-                    <div class="hero-about__block-text name page-block">
+                    <div class="hero-about__block-text page-block">
                         <a href="index.html" class="page-block__name-link">Home</a>
                         <span class="page-block__name-span">></span>
-                        <a href="about.html" class="page-blockt__name-link page-block__name-link_color">About us</a>
+                        <a href="about.html" class="page-block__name-link page-block__name-link_color">About us</a>
                     </div>
                     <h4 class="hero-about__title title title_m">
                         Lorem Ipsum is simply dummy text of the printing and.
@@ -106,8 +109,24 @@
                         <span class="icon-arrow-6"></span>
                     </a>
                 </div>
-                <div class="hero-about__slider">
-                    <img src="img/about/hero-about.png" alt="">
+                <div class="hero-about__slider-list" id="slider-about">
+                    <div class="hero-about__slider-item">
+                        <img class="hero-about__slider-pic" src="img/about/hero-about.png" alt="">
+                        <div class="hero-about__slider-number">
+                            <!-- <span class="hero-about__slider-icon icon-arrow-7"></span> -->
+                            <span class="hero-about__slider-text">1 of 2</span>
+                            <!-- <span class="hero-about__slider-icon icon-arrow-6-1"></span> -->
+                        </div>
+                    </div>
+                    <div class="hero-about__slider-item">
+                        <img class="hero-about__slider-pic" src="img/about/hero-about.png" alt="">
+                        <div class="hero-about__slider-number">
+                            <!-- <span class="hero-about__slider-icon icon-arrow-7"></span> -->
+                            <span class="hero-about__slider-text">1 of 2</span>
+                            <!-- <span class="hero-about__slider-icon icon-arrow-6-1"></span> -->
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
         </section>
@@ -317,6 +336,7 @@
     </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="js/menu.js"></script>
-
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script src="js/js.js"></script>
 </body>
 </html>
