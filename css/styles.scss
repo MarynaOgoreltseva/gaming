@@ -715,8 +715,9 @@ ul {
             font-weight: 400;
         
             &:hover {
-                border-bottom: 1px solid red;
-            }
+                    border-bottom: 2px solid #FA9021;
+                    color: #FA9021;
+                }
         }
     }
     .header__burger {
@@ -724,6 +725,7 @@ ul {
         
     }
     .btn-burger {
+        cursor: pointer;
         width: 48px;
         height: 48px;
         border-radius: 12px;
