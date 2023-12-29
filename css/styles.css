@@ -29,7 +29,17 @@ a {
   cursor: pointer;
   text-decoration: none;
 }
-a:hover {
+
+a,
+.btn_subscribe,
+.contacts-form__btn-submit {
+  cursor: pointer;
+}
+a:hover, a:focus,
+.btn_subscribe:hover,
+.btn_subscribe:focus,
+.contacts-form__btn-submit:hover,
+.contacts-form__btn-submit:focus {
   transform: skew(-10deg);
 }
 

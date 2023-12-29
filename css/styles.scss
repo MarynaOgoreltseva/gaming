@@ -29,9 +29,16 @@ body {
 a {
     cursor: pointer;
     text-decoration: none;
-    &:hover {
-            transform: skew(-10deg);
-        }
+}
+
+a,
+.btn_subscribe,
+.contacts-form__btn-submit {
+    cursor: pointer;
+    &:hover, 
+    &:focus {
+        transform: skew(-10deg);
+    }
 }
 
 ul {
