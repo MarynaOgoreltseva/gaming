@@ -17,6 +17,7 @@
 }
 
 .contacts {
+    margin-bottom: 147px;
     color: $textcolor;
     font-size: 16px;
     font-weight: 400;
@@ -29,13 +30,17 @@
         max-width: 1188px;
         width: 100%;
         justify-content: space-between;
-        margin: 0 auto 147px;
+        margin: 0 auto;
+        align-items: center;
+        
     }
     &__item {
         border-right: 1px solid #fff;
-        padding: 0 30px;
+        padding: 0 50px;
+        width: calc(100% / 3);
+        height: 100px;
         &:last-child {
-            border-right: none;
+            border: none;
         }
     }
     &__title {
@@ -155,8 +160,21 @@
         margin-left: auto;
     }
 }
-
+@media screen and (max-width: 1024px) {
+    .contacts{
+        &__item {
+            padding: 0 10px;
+        }
+        &__link {
+            padding-left: 0;
+                font-size: 15px;
+        }
+    }
+}
 @media screen and (max-width: 700px) {
+    .contacts {
+        margin-bottom: 10px;
+    }
     .contacts-form {
         &__item-wrap {
             flex-direction: column;
@@ -168,5 +186,20 @@
             }
         }
         
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .contacts{
+        &__list  {
+            flex-direction: column;
+            padding: 0 15px;
+        }
+        &__item {
+            border-bottom: 1px solid #fff;
+            border-right: none;
+            width: 100%;
+            max-width: 400px;
+        }
     }
 }
