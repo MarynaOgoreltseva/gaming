@@ -204,6 +204,9 @@
     row-gap: 40px;
     justify-content: center;
   }
+  .hero-about__block-text {
+    margin-bottom: 15px;
+  }
   .hero-about__text-block {
     margin-right: 0;
   }

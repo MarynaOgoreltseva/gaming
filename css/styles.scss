@@ -650,6 +650,13 @@ ul {
             flex-wrap: wrap;
         }
     }
+    .header {
+        padding-bottom: 0;
+        &__burger {
+                display: block;
+        
+            }
+    }
     .wrap_hero-index {
             flex-direction: column;
             // row-gap: 40;
@@ -730,10 +737,6 @@ ul {
                     color: #FA9021;
                 }
         }
-    }
-    .header__burger {
-        display: block;
-        
     }
     .btn-burger {
         cursor: pointer;

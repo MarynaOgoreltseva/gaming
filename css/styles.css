@@ -618,6 +618,12 @@ ul {
   .trending__list {
     flex-wrap: wrap;
   }
+  .header {
+    padding-bottom: 0;
+  }
+  .header__burger {
+    display: block;
+  }
   .wrap_hero-index {
     flex-direction: column;
   }
@@ -687,9 +693,6 @@ ul {
   .nav-mobile__link:hover {
     border-bottom: 2px solid #FA9021;
     color: #FA9021;
-  }
-  .header__burger {
-    display: block;
   }
   .btn-burger {
     cursor: pointer;
