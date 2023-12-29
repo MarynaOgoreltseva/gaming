@@ -29,6 +29,9 @@ body {
 a {
     cursor: pointer;
     text-decoration: none;
+    &:hover {
+            transform: skew(-10deg);
+        }
 }
 
 ul {
@@ -720,6 +723,7 @@ ul {
             align-items: center;
             justify-content: space-between;
             top: 50px;
+            left: 0;
         }
         &__picture-wrap {
             margin: unset;

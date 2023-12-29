@@ -29,6 +29,9 @@ a {
   cursor: pointer;
   text-decoration: none;
 }
+a:hover {
+  transform: skew(-10deg);
+}
 
 ul {
   list-style: none;
@@ -662,6 +665,7 @@ ul {
     align-items: center;
     justify-content: space-between;
     top: 50px;
+    left: 0;
   }
   .hero__picture-wrap {
     margin: unset;
