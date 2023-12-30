@@ -26,6 +26,10 @@
 .page-block__name-link_color {
   color: #E47500;
 }
+.page-block__name-link:hover {
+  border-bottom: 2px solid #FA9021;
+  color: #FA9021;
+}
 
 .hero-about {
   padding: 70px 0;
@@ -175,6 +179,11 @@
   justify-content: center;
 }
 .team__item {
+  max-width: 296px;
+  width: 100%;
+}
+.team__item-link {
+  display: block;
   padding: 35px 84px 30px;
   border-radius: 20px;
   background: #1C140F;

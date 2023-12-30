@@ -20,9 +20,7 @@ img {
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
-  background: linear-gradient(181deg, #000 0.82%, #4A2800 129.1%);
-  -webkit-backdrop-filter: blur(7px);
-          backdrop-filter: blur(7px);
+  background: linear-gradient(177deg, #050301 -30.15%, #120A01 92.85%);
 }
 
 a {
@@ -40,7 +38,7 @@ a:hover, a:focus,
 .btn_subscribe:focus,
 .contacts-form__btn-submit:hover,
 .contacts-form__btn-submit:focus {
-  transform: skew(-10deg);
+  transform: skew(-8deg);
 }
 
 ul {
@@ -160,6 +158,8 @@ ul {
   display: flex;
   gap: 88px;
   align-items: center;
+  z-index: 2;
+  position: relative;
 }
 .nav__item_btn {
   border-radius: 6px;
@@ -385,11 +385,15 @@ ul {
   justify-content: center;
 }
 
-.item-benefits {
+.item-benefits__link {
   display: flex;
   flex-direction: column;
   gap: 30px;
   align-items: center;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 187.5%;
 }
 .item-benefits__pic {
   width: 65px;

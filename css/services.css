@@ -75,6 +75,9 @@
   margin-bottom: 45px;
 }
 
+.services-news {
+  margin-bottom: 160px;
+}
 .services-news__list {
   display: flex;
   flex-direction: column;
@@ -188,6 +191,7 @@
 .customers {
   padding: 88px 0 60px;
   color: #fff;
+  background: #1C140F;
 }
 .customers__text-block {
   text-align: center;
@@ -333,6 +337,9 @@
   }
   .video__block {
     max-width: unset;
+  }
+  .services-news {
+    margin-bottom: 40px;
   }
 }
 @media screen and (max-width: 768px) {

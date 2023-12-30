@@ -81,6 +81,7 @@
 
 
 .services-news {
+    margin-bottom: 160px;
     &__list {
         display: flex;
         flex-direction: column;
@@ -199,6 +200,7 @@
 .customers {
     padding: 88px 0 60px;
     color: $textcolor;
+    background: #1C140F;
     &__text-block {
         text-align: center;
     }
@@ -362,6 +364,9 @@
         &__block {
             max-width: unset;
         }
+    }
+    .services-news {
+        margin-bottom: 40px;
     }
 }
 

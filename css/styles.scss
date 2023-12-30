@@ -22,8 +22,8 @@ img {
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(181deg, #000 0.82%, #4A2800 129.1%);
-    backdrop-filter: blur(7px);
+    background: linear-gradient(177deg, #050301 -30.15%, #120A01 92.85%);
+
 }
 
 a {
@@ -37,7 +37,7 @@ a,
     cursor: pointer;
     &:hover, 
     &:focus {
-        transform: skew(-10deg);
+        transform: skew(-8deg);
     }
 }
 
@@ -163,6 +163,8 @@ ul {
         display: flex;
         gap: 88px;
         align-items: center;
+        z-index: 2;
+        position: relative;
     }
     &__item {
         &_btn {
@@ -426,10 +428,20 @@ ul {
 }
 
 .item-benefits {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    align-items: center;
+    // display: flex;
+    // flex-direction: column;
+    // gap: 30px;
+    // align-items: center;
+    &__link {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+        color: $textcolor;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 187.5%;
+    }
     &__pic {
         width: 65px;
         height: 65px;
